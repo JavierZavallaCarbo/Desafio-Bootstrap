@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "section3 section3 section3"
+    "section4 section4 section4"
+    "section5 section5 section5"
+    "section6 section6 section6"
+    "section7 section7 section7"
+    "footer footer footer";
+    grid-template-rows: 30px 80px 600px 450px 50px 350px 50px 561px 150px;
+    grid-template-columns: 100px 1fr 1fr;
+
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    align-items: bottom;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#section1  {
+    grid-area: section1;
+}
+
+.logoymenu {
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;  
+    width: 100%;    
+}
+
+.menus {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#section2 {
+    grid-area: section2;
+}
+
+#section3 {
+    grid-area: section3;
+    border-radius: 10px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.ropa:hover {
+    transform: scale(0.9);
+    transition: all 0.5s;
+    border-radius: 50%;
+}
+
+#section4{
+    grid-area: section4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px 200px 5px 200px;
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#section5 {
+    grid-area: section5;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 80px 0 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.video {
+    border-radius: 10px;
+}
+
+.chicasentada {
+    border-radius: 10px;
+}
+
+#section5:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+#section6 {
+    grid-area: section6;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px 65px 5px 65px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#section7 {
+    grid-area: section7;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info {
+    text-decoration: underline;
+    color: white;
+}
+.lista {
+    margin-top: 5%;
+    color: white;
+}
+
+.metodos {
+    color: white;
+}
+
+.mp {
+    text-decoration: underline;
+}
+
+.listadetarjetas {
+    margin-top: 5%;
+}
+
+/*A PARTIR DE ACA CSS PARA SHOP.HTML*/
+.contenedorpadre {
+    display: grid;
+    grid-template-areas: 
+    "s-shop1 s-shop1 s-shop1"
+    "s-shop3 s-shop2 s-shop2"
+    "s-shop3 s-shop2 s-shop2"
+    "s-shop3 s-shop4 s-shop4"
+    "footershop footershop footershop";
+    grid-template-rows: 100px 150px 1fr 400px 50px;
+    grid-template-columns: 200px 1fr 1149px;
+}
+
+#s-shop1 {
+    grid-area: s-shop1;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menusshop {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#s-shop2 {
+    grid-area: s-shop2;
+    background-image: url(imagenes/iimagens3.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+#s-shop3 {
+    grid-area: s-shop3;
+    background-image: url(imagenes/Image14.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: white; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.categoria {
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#s-shop4 {
+    grid-area: s-shop4 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footershop  {
+    grid-area: footershop;
+}
+    
